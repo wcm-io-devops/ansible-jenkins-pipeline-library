@@ -47,7 +47,7 @@ jenkins_pipeline_library_updates_timeout: 60
 jenkins_pipeline_library_debug: false
 
 # plugins and their versions that must be present for jenkins-pipeline-library
-jenkins_pipeline_library_plugins:
+jenkins_pipeline_library_plugins_present:
   - name: ace-editor
     version: "1.1"
   - name: authentication-tokens
@@ -164,3 +164,6 @@ jenkins_pipeline_library_plugins:
     # do not upgrade further than 2.17, see: https://issues.jenkins-ci.org/browse/JENKINS-49597
   - name: workflow-support
     version: "2.17"
+
+# plugins that must be absent for jenkins-pipeline-library
+jenkins_pipeline_library_plugins_absent: []
