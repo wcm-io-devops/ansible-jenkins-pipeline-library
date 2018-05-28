@@ -1,0 +1,54 @@
+galaxy_info:
+  author: Tobias Richter
+  description: Ansible role for setting up a Jenkins instance for the jenkins-pipeline-library.
+  company: pro!vision
+  issue_tracker_url: https://wcm-io.atlassian.net
+  license: Apache
+  min_ansible_version: 2.0
+
+  platforms:
+  - name: Debian
+    versions:
+    - stretch
+
+  galaxy_tags:
+    - jenkins
+    - jenkins-pipeline-library
+    - jenkine-pipeline
+    - jenkins-shared-library
+    - pipeline
+    - wcmio
+
+dependencies:
+  # install jenkins
+  - { role: geerlingguy.jenkins,
+      jenkins_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
+      jenkins_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
+      jenkins_http_port: "{{ jenkins_pipeline_library_jenkins_port }}",
+      jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",
+      jenkins_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
+      jenkins_version: "{{ jenkins_pipeline_library_jenkins_version }}",
+      jenkins_pkg_url: "{{ jenkins_pipeline_library_jenkins_pkg_url }}",
+      jenkins_process_user: "{{ jenkins_pipeline_library_jenkins_process_user }}",
+      jenkins_process_group: "{{ jenkins_pipeline_library_jenkins_process_group }}",
+      tags: ['wcm-io-devops.jenkins-pipeline-library.jenkins-installation'],
+      # only setup jenkins when enabled
+      when: jenkins_pipeline_library_jenkins_install == true
+   }
+  # ensure service is started
+  - { role: wcm-io-devops.jenkins-service,
+      jenkins_service_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
+      jenkins_service_port: "{{ jenkins_pipeline_library_jenkins_port }}",
+      jenkins_service_url_prefix: "{{ jenkins_pipeline_library_jenkins_url_prefix }}",
+      jenkins_service_state: started
+  }
+  # install plugins
+  - { role: wcm-io-devops.jenkins-plugins,
+      jenkins_plugins_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
+      jenkins_plugins_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
+      jenkins_plugins_jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",
+      jenkins_plugins_jenkins_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
+      jenkins_plugins_jenkins_port: "{{ jenkins_pipeline_library_jenkins_port }}",
+      jenkins_plugins_jenkins_url_prefix: "{{ jenkins_pipeline_library_jenkins_url_prefix }}",
+      jenkins_plugins_present: "{{ jenkins_pipeline_library_plugins }}"
+   }

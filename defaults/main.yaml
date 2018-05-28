@@ -1,0 +1,166 @@
+# the version of the jenkins when it is installed with the jenkins role dependency
+jenkins_pipeline_library_jenkins_version: 2.107.3
+
+# controls if the jenkins will be installed by the jenkins role dependency
+jenkins_pipeline_library_jenkins_install: false
+
+# linux jenkins user
+jenkins_pipeline_library_jenkins_process_user: jenkins
+
+# linux group of jenkins user
+jenkins_pipeline_library_jenkins_process_group: "{{ jenkins_pipeline_library_jenkins_process_user }}"
+
+# package url for installing specific stable jenkins versions
+jenkins_pipeline_library_jenkins_pkg_url: https://pkg.jenkins.io/debian-stable/binary
+
+# jenkins admin username
+jenkins_pipeline_library_admin_username: admin
+
+# jenkins admin password
+jenkins_pipeline_library_admin_password: admin
+
+# path to the jenkins directory
+jenkins_pipeline_library_jenkins_home: /var/lib/jenkins
+
+# hostname of the jenkins instance
+jenkins_pipeline_library_jenkins_hostname: localhost
+
+# http port of the jenkins instance
+jenkins_pipeline_library_jenkins_port: 8080
+
+# url prefix of the jenkins instance, e.g. when running in tomcat
+jenkins_pipeline_library_jenkins_url_prefix: ""
+
+# path to the jenkins update directory
+jenkins_pipeline_library_jenkins_update_dir: "{{ jenkins_pipeline_library_jenkins_home }}/updates"
+
+# the base url of the jenkins instance
+jenkins_pipeline_library_jenkins_base_url: "http://{{ jenkins_facts_jenkins_hostname }}:{{ jenkins_facts_jenkins_port }}{{ jenkins_facts_jenkins_url_prefix }}"
+
+# maximum seconds since the last jenkins plugin update check
+jenkins_pipeline_library_updates_expiration: 86400
+
+# timeout for jenkins update operation
+jenkins_pipeline_library_updates_timeout: 60
+
+# when set to enable the role will log some debug information
+jenkins_pipeline_library_debug: false
+
+# plugins and their versions that must be present for jenkins-pipeline-library
+jenkins_pipeline_library_plugins:
+  - name: ace-editor
+    version: "1.1"
+  - name: authentication-tokens
+    version: "1.3"
+  - name: apache-httpcomponents-client-4-api
+    version: "4.5.5-2.1"
+  - name: branch-api
+    version: "2.0.20"
+  - name: cloudbees-folder
+    version: "6.4"
+  - name: config-file-provider
+    version: "2.18"
+  - name: credentials
+    version: "2.1.16"
+  - name: credentials-binding
+    version: "1.16"
+  - name: display-url-api
+    version: "2.2.0"
+  - name: docker-workflow
+    version: "1.17"
+  - name: docker-commons
+    version: "1.13"
+  - name: durable-task
+    version: "1.22"
+  - name: git
+    version: "3.9.0"
+  - name: git-client
+    version: "2.7.2"
+  - name: git-server
+    version: "1.7"
+  - name: handlebars
+    version: "1.1.1"
+  - name: jackson2-api
+    version: "2.8.11.2"
+  - name: junit
+    version: "1.24"
+  - name: jquery-detached
+    version: "1.2.1"
+  - name: jsch
+    version: "0.1.54.2"
+  - name: managed-scripts
+    version: "1.4"
+  - name: mailer
+    version: "1.21"
+  - name: managed-scripts
+    version: "1.4"
+  - name: matrix-project
+    version: "1.13"
+  - name: momentjs
+    version: "1.1.1"
+  - name: nodejs
+    version: "1.2.6"
+  - name: pipeline-aggregator-view
+    version: "1.8"
+  - name: pipeline-build-step
+    version: "2.7"
+  - name: pipeline-graph-analysis
+    version: "1.6"
+  - name: pipeline-input-step
+    version: "2.8"
+  - name: pipeline-model-declarative-agent
+    version: "1.1.1"
+  - name: pipeline-model-definition
+    version: "1.2.9"
+  - name: pipeline-milestone-step
+    version: "1.3.1"
+  - name: pipeline-model-api
+    version: "1.2.9"
+  - name: pipeline-model-extensions
+    version: "1.2.9"
+  - name: pipeline-rest-api
+    version: "2.10"
+  - name: pipeline-stage-step
+    version: "2.3"
+  - name: pipeline-stage-tags-metadata
+    version: "1.2.9"
+  - name: pipeline-stage-view
+    version: "2.10"
+  - name: pipeline-utility-steps
+    version: "2.1.0"
+  - name: plain-credentials
+    version: "1.4"
+  - name: rebuild
+    version: "1.28"
+  - name: scm-api
+    version: "2.2.7"
+    # 1.44 causes stack overflows with pipeline library
+  - name: script-security
+    version: "1.43"
+  - name: ssh-credentials
+    version: "1.13"
+  - name: structs
+    version: "1.14"
+  - name: token-macro
+    version: "2.5"
+  - name: workflow-api
+    version: "2.27"
+  - name: workflow-basic-steps
+    version: "2.7"
+  - name: workflow-cps
+    version: "2.53"
+  - name: workflow-cps-global-lib
+    version: "2.9"
+  - name: workflow-durable-task-step
+    version: "2.19"
+  - name: workflow-job
+    version: "2.21"
+  - name: workflow-multibranch
+    version: "2.19"
+  - name: workflow-scm-step
+    version: "2.6"
+  - name: workflow-step-api
+    version: "2.15"
+    # do not upgrade further than 2.17, see: https://issues.jenkins-ci.org/browse/JENKINS-49597
+  - name: workflow-support
+    version: "2.17"
