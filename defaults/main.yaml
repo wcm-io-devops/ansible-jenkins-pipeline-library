@@ -1,52 +1,52 @@
-# the version of the jenkins when it is installed with the jenkins role dependency
+# The version of the jenkins when it is installed with the jenkins role dependency
 jenkins_pipeline_library_jenkins_version: 2.107.3
 
-# controls if the jenkins will be installed by the jenkins role dependency
+# Controls if the jenkins will be installed by the jenkins role dependency
 jenkins_pipeline_library_jenkins_install: false
 
-# linux jenkins user
+# Linux jenkins user
 jenkins_pipeline_library_jenkins_process_user: jenkins
 
-# linux group of jenkins user
+# Linux group of jenkins user
 jenkins_pipeline_library_jenkins_process_group: "{{ jenkins_pipeline_library_jenkins_process_user }}"
 
-# package url for installing specific stable jenkins versions
+# Package url for installing specific stable jenkins versions
 jenkins_pipeline_library_jenkins_pkg_url: https://pkg.jenkins.io/debian-stable/binary
 
-# jenkins admin username
+# Jenkins admin username
 jenkins_pipeline_library_admin_username: admin
 
-# jenkins admin password
+# Jenkins admin password
 jenkins_pipeline_library_admin_password: admin
 
-# path to the jenkins directory
+# Path to the jenkins directory
 jenkins_pipeline_library_jenkins_home: /var/lib/jenkins
 
-# hostname of the jenkins instance
+# Hostname of the jenkins instance
 jenkins_pipeline_library_jenkins_hostname: localhost
 
-# http port of the jenkins instance
+# HTTP port of the jenkins instance
 jenkins_pipeline_library_jenkins_port: 8080
 
-# url prefix of the jenkins instance, e.g. when running in tomcat
+# Url prefix of the jenkins instance, e.g. when running in tomcat
 jenkins_pipeline_library_jenkins_url_prefix: ""
 
-# path to the jenkins update directory
+# Path to the jenkins update directory
 jenkins_pipeline_library_jenkins_update_dir: "{{ jenkins_pipeline_library_jenkins_home }}/updates"
 
-# the base url of the jenkins instance
+# The base url of the jenkins instance
 jenkins_pipeline_library_jenkins_base_url: "http://{{ jenkins_facts_jenkins_hostname }}:{{ jenkins_facts_jenkins_port }}{{ jenkins_facts_jenkins_url_prefix }}"
 
-# maximum seconds since the last jenkins plugin update check
+# Maximum seconds since the last jenkins plugin update check
 jenkins_pipeline_library_updates_expiration: 86400
 
-# timeout for jenkins update operation
+# Timeout for jenkins update operation
 jenkins_pipeline_library_updates_timeout: 60
 
-# when set to enable the role will log some debug information
+# When set to enable the role will log some debug information
 jenkins_pipeline_library_debug: false
 
-# plugins and their versions that must be present for jenkins-pipeline-library
+# Plugins and their versions that must be present for jenkins-pipeline-library
 jenkins_pipeline_library_plugins_present:
   - name: ace-editor
     version: "1.1"
@@ -165,5 +165,5 @@ jenkins_pipeline_library_plugins_present:
   - name: workflow-support
     version: "2.17"
 
-# plugins that must be absent for jenkins-pipeline-library
+# Plugins that must be absent for jenkins-pipeline-library
 jenkins_pipeline_library_plugins_absent: []
