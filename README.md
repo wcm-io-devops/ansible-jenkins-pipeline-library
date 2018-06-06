@@ -14,13 +14,13 @@ Optionally the role also directly setups a Jenkins instance using [geerlingguy.j
 
 The Version number will follow the following versioning schema:
 
-`JenkinsVersion]-[ReleaseCount]`
+`v[JenkinsVersion]-[ReleaseCount]`
 
 So for example:
-* `2.107.2-1` - first release for Jenkins 2.107.2
-* `2.107.2-2` - second release for Jenkins 2.107.2
-* `2.107.2-N` - nth release for Jenkins 2.107.2
-* `2.107.3-1` - first release for Jenkins 2.107.3
+* `v2.107.2-1` - first release for Jenkins 2.107.2
+* `v2.107.2-2` - second release for Jenkins 2.107.2
+* `v2.107.2-N` - nth release for Jenkins 2.107.2
+* `v2.107.3-1` - first release for Jenkins 2.107.3
 
 ## Requirements
 
