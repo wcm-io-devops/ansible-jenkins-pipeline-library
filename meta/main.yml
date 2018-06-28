@@ -35,13 +35,6 @@ dependencies:
       # only setup jenkins when enabled
       when: jenkins_pipeline_library_jenkins_install == true
    }
-  # ensure service is started
-  - { role: wcm-io-devops.jenkins-service,
-      jenkins_service_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
-      jenkins_service_port: "{{ jenkins_pipeline_library_jenkins_port }}",
-      jenkins_service_url_prefix: "{{ jenkins_pipeline_library_jenkins_url_prefix }}",
-      jenkins_service_state: started
-  }
   # install plugins
   - { role: wcm-io-devops.jenkins-plugins,
       jenkins_plugins_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
