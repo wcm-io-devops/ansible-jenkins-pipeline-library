@@ -119,7 +119,7 @@ It also depends on the
 role to install/uninstall the plugins needed by the
 [jenkins-pipeline-library](https://github.com/wcm-io-devops/jenkins-pipeline-library)
 
-As transinient dependency this role uses the
+As transitive dependency this role uses the
 [wcm-io-devops.jenkins-facts](https://github.com/wcm-io-devops/ansible-jenkins-facts)
 role to retrieve the list of installed plugins from the Jenkins
 instance.
