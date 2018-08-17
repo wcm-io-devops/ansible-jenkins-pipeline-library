@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: jenkins_pipeline_library
   author: Tobias Richter
   description: Ansible role for setting up a Jenkins instance for the jenkins-pipeline-library.
   company: pro!vision
@@ -43,7 +44,7 @@ dependencies:
       jenkins_service_state: started
   }
   # install plugins
-  - { role: wcm-io-devops.jenkins-plugins,
+  - { role: wcm_io_devops.jenkins_plugins,
       jenkins_plugins_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
       jenkins_plugins_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
       jenkins_plugins_jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",

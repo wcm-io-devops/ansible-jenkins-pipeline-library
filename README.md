@@ -110,17 +110,17 @@ Plugins that must be absent for jenkins-pipeline-library.
 ## Dependencies
 
 This role depends on the
-[wcm-io-devops.jenkins-service](https://github.com/wcm-io-devops/ansible-jenkins-service)
+[wcm_io_devops.jenkins_plugins](https://github.com/wcm-io-devops/ansible-jenkins-plugins)
 role to ensure that the Jenkins service is started before plugins are
 managed.
 
 It also depends on the
-[wcm-io-devops.jenkins-plugins](https://github.com/wcm-io-devops/ansible-jenkins-plugins)
+[wcm_io_devops.jenkins_plugins](https://github.com/wcm-io-devops/ansible-jenkins-plugins)
 role to install/uninstall the plugins needed by the
 [jenkins-pipeline-library](https://github.com/wcm-io-devops/jenkins-pipeline-library)
 
 As transitive dependency this role uses the
-[wcm-io-devops.jenkins-facts](https://github.com/wcm-io-devops/ansible-jenkins-facts)
+[wcm_io_devops.jenkins_facts](https://github.com/wcm-io-devops/ansible-jenkins-facts)
 role to retrieve the list of installed plugins from the Jenkins
 instance.
 
