@@ -1,4 +1,4 @@
-# wcm-io-devops.jenkins-pipeline-library
+# wcm_io_devops.jenkins_pipeline_library
 
 This role is a utility roles to setup jenkins instances for the usage of
 the wcm-io-devops
@@ -14,13 +14,13 @@ Optionally the role also directly setups a Jenkins instance using [geerlingguy.j
 
 The Version number will follow the following versioning schema:
 
-`v[JenkinsVersion]-[ReleaseCount]`
+`[JenkinsVersion]-[ReleaseCount]`
 
 So for example:
-* `v2.107.2-1` - first release for Jenkins 2.107.2
-* `v2.107.2-2` - second release for Jenkins 2.107.2
-* `v2.107.2-N` - nth release for Jenkins 2.107.2
-* `v2.107.3-1` - first release for Jenkins 2.107.3
+* `2.107.2-1` - first release for Jenkins 2.107.2
+* `2.107.2-2` - second release for Jenkins 2.107.2
+* `2.107.2-N` - nth release for Jenkins 2.107.2
+* `2.107.3-1` - first release for Jenkins 2.107.3
 
 ## Requirements
 
@@ -110,12 +110,12 @@ Plugins that must be absent for jenkins-pipeline-library.
 ## Dependencies
 
 This role depends on the
-[wcm-io-devops.jenkins-plugins](https://github.com/wcm-io-devops/ansible-jenkins-plugins)
+[wcm_io_devops.jenkins_plugins](https://github.com/wcm-io-devops/ansible-jenkins-plugins)
 role to install/uninstall the plugins needed by the
 [jenkins-pipeline-library](https://github.com/wcm-io-devops/jenkins-pipeline-library)
 
 As transitive dependency this role uses the
-[wcm-io-devops.jenkins-facts](https://github.com/wcm-io-devops/ansible-jenkins-facts)
+[wcm_io_devops.jenkins_facts](https://github.com/wcm-io-devops/ansible-jenkins-facts)
 role to retrieve the list of installed plugins from the Jenkins
 instance.
 
@@ -126,7 +126,7 @@ https://github.com/wcm-io-devops/jenkins-pipeline-library.
 
 	- hosts: jenkins
 	  roles:
-	    - role: wcm-io-devops.jenkins-pipeline-library
+	    - role: wcm_io_devops.jenkins_pipeline_library
 
 ## License
 
