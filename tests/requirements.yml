@@ -4,3 +4,5 @@
   version: master
 - name: wcm_io_devops.jenkins_plugins
   version: master
+- name: geerlingguy.jenkins,
+  version: 3.5.0
