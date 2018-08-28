@@ -14,9 +14,6 @@ galaxy_info:
 
   galaxy_tags:
     - jenkins
-    - jenkins-pipeline-library
-    - jenkine-pipeline
-    - jenkins-shared-library
     - pipeline
     - wcmio
 
