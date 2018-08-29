@@ -74,7 +74,6 @@ jenkins_pipeline_library_plugins_present:
     version: "1.25"
   - name: git
     version: "3.9.1"
-    version: "3.9.1"
   - name: git-client
     version: "2.7.3"
   - name: git-server
