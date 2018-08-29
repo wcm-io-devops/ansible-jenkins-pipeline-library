@@ -1,5 +1,5 @@
 # The version of the jenkins when it is installed with the jenkins role dependency
-jenkins_pipeline_library_jenkins_version: 2.121.2
+jenkins_pipeline_library_jenkins_version: 2.121.3
 
 # Controls if the jenkins will be installed by the jenkins role dependency
 jenkins_pipeline_library_jenkins_install: false
@@ -71,11 +71,12 @@ jenkins_pipeline_library_plugins_present:
   - name: docker-commons
     version: "1.13"
   - name: durable-task
-    version: "1.22"
+    version: "1.25"
   - name: git
     version: "3.9.1"
+    version: "3.9.1"
   - name: git-client
-    version: "2.7.2"
+    version: "2.7.3"
   - name: git-server
     version: "1.7"
   - name: handlebars
@@ -144,15 +145,17 @@ jenkins_pipeline_library_plugins_present:
   - name: token-macro
     version: "2.5"
   - name: workflow-api
-    version: "2.28"
+    version: "2.29"
   - name: workflow-basic-steps
-    version: "2.9"
+    version: "2.10"
   - name: workflow-cps
     version: "2.54"
   - name: workflow-cps-global-lib
-    version: "2.9"
+    version: "2.10"
+    # do not upgrade, workflow-support 2.18+ is required, which can not be upgraded
   - name: workflow-durable-task-step
     version: "2.19"
+    # do not upgrade, workflow-support 2.18+ is required, which can not be upgraded
   - name: workflow-job
     version: "2.23"
   - name: workflow-multibranch
