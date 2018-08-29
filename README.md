@@ -20,7 +20,7 @@ So for example:
 * `2.107.2-1` - first release for Jenkins 2.107.2
 * `2.107.2-2` - second release for Jenkins 2.107.2
 * `2.107.2-N` - nth release for Jenkins 2.107.2
-* `2.107.3-1` - first release for Jenkins 2.107.3
+* `2.121.3-1` - first release for Jenkins 2.121.3
 
 ## Requirements
 
