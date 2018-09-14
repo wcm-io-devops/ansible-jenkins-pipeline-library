@@ -57,9 +57,9 @@ jenkins_pipeline_library_plugins_present:
   - name: branch-api
     version: "2.0.20"
   - name: cloudbees-folder
-    version: "6.5.1"
+    version: "6.6"
   - name: config-file-provider
-    version: "2.18"
+    version: "3.1"
   - name: credentials
     version: "2.1.18"
   - name: credentials-binding
@@ -83,7 +83,7 @@ jenkins_pipeline_library_plugins_present:
   - name: jackson2-api
     version: "2.8.11.3"
   - name: junit
-    version: "1.24"
+    version: "1.25"
   - name: jquery-detached
     version: "1.2.1"
   - name: jsch
@@ -113,17 +113,17 @@ jenkins_pipeline_library_plugins_present:
   - name: pipeline-model-declarative-agent
     version: "1.1.1"
   - name: pipeline-model-definition
-    version: "1.3.1"
+    version: "1.3.2"
   - name: pipeline-model-api
-    version: "1.3.1"
+    version: "1.3.2"
   - name: pipeline-model-extensions
-    version: "1.3.1"
+    version: "1.3.2"
   - name: pipeline-rest-api
     version: "2.10"
   - name: pipeline-stage-step
     version: "2.3"
   - name: pipeline-stage-tags-metadata
-    version: "1.3.1"
+    version: "1.3.2"
   - name: pipeline-stage-view
     version: "2.10"
   - name: pipeline-utility-steps
@@ -136,7 +136,7 @@ jenkins_pipeline_library_plugins_present:
     version: "2.2.7"
     # 1.44 causes stack overflows with pipeline library
   - name: script-security
-    version: "1.43"
+    version: "1.46"
   - name: ssh-credentials
     version: "1.14"
   - name: structs
@@ -146,26 +146,23 @@ jenkins_pipeline_library_plugins_present:
   - name: workflow-api
     version: "2.29"
   - name: workflow-basic-steps
-    version: "2.10"
+    version: "2.11"
   - name: workflow-cps
-    version: "2.54"
+    version: "2.55"
   - name: workflow-cps-global-lib
-    version: "2.10"
-    # do not upgrade, workflow-support 2.18+ is required, which can not be upgraded
+    version: "2.11"
   - name: workflow-durable-task-step
-    version: "2.19"
-    # do not upgrade, workflow-support 2.18+ is required, which can not be upgraded
+    version: "2.21"
   - name: workflow-job
-    version: "2.23"
+    version: "2.25"
   - name: workflow-multibranch
     version: "2.20"
   - name: workflow-scm-step
     version: "2.6"
   - name: workflow-step-api
     version: "2.16"
-    # do not upgrade further than 2.17, see: https://issues.jenkins-ci.org/browse/JENKINS-49597
   - name: workflow-support
-    version: "2.17"
+    version: "2.20"
 
 # Plugins that must be absent for jenkins-pipeline-library
 jenkins_pipeline_library_plugins_absent: []
