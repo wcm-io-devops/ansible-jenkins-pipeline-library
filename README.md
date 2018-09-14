@@ -8,7 +8,7 @@ This role installs all necessary plugins in specific versions which
 ensures that the shared pipeline library is always running with the
 latest compatible plugins.
 
-:exclamation: Starting with version 2.121.3-2 the role will also
+:exclamation: Starting with version 2.138.1-1 the role will also
 configure the script security to allow some signatures!
 
 Optionally the role also directly setups a Jenkins instance using [geerlingguy.jenkins](https://github.com/geerlingguy/ansible-role-jenkins).
