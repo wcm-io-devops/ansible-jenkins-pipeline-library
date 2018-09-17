@@ -46,3 +46,14 @@ dependencies:
       jenkins_plugins_present: "{{ jenkins_pipeline_library_plugins_present }}",
       jenkins_plugins_absent: "{{ jenkins_pipeline_library_plugins_absent }}",
    }
+  # configure script security for jenkins-pipeline-library
+  - { role: wcm_io_devops.jenkins_script_security,
+      version: 1.0.0,
+      jenkins_script_security_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
+      jenkins_script_security_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
+      jenkins_script_security_jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",
+      jenkins_script_security_jenkins_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
+      jenkins_script_security_jenkins_port: "{{ jenkins_pipeline_library_jenkins_port }}",
+      jenkins_script_security_jenkins_url_prefix: "{{ jenkins_pipeline_library_jenkins_url_prefix }}",
+      jenkins_script_security_approved_signatures_present: "{{ jenkins_pipeline_library_approved_signatures_present }}"
+    }

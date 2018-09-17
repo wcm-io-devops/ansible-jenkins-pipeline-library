@@ -8,6 +8,9 @@ This role installs all necessary plugins in specific versions which
 ensures that the shared pipeline library is always running with the
 latest compatible plugins.
 
+:exclamation: Starting with version 2.138.1-1 the role will also
+configure the script security to allow some signatures!
+
 Optionally the role also directly setups a Jenkins instance using [geerlingguy.jenkins](https://github.com/geerlingguy/ansible-role-jenkins).
 
 ## Versioning
@@ -100,6 +103,11 @@ When set to enable the role will log some debug information.
 Plugins and their versions that must be present for
 jenkins-pipeline-library.
 
+    jenkins_pipeline_library_approved_signatures_present:
+
+Signatures that need to be approved for jenkins-pipeline-library,
+otherwise the signatures will be blocked by script-security.
+
 :bulb: Since this list is long please refer to
 [defaults](defaults/main.yaml)
 
@@ -113,6 +121,16 @@ This role depends on the
 [wcm_io_devops.jenkins_plugins](https://github.com/wcm-io-devops/ansible-jenkins-plugins)
 role to install/uninstall the plugins needed by the
 [jenkins-pipeline-library](https://github.com/wcm-io-devops/jenkins-pipeline-library)
+
+In order to allow to run the
+[jenkins-pipeline-library](https://github.com/wcm-io-devops/jenkins-pipeline-library)
+with the Pipeline Supporting APIs 1.18+ (workflow-support) and with
+Script Security ( script-security) 1.44+ this role also depends on
+[wcm_io_devops.jenkins_script_plugin](https://github.com/wcm-io-devops/ansible-jenkins-script-security)
+for whitelisting some signatures in the Groovy Sandbox.
+
+For installing a Jenkins on the target instance the role is using
+[geerlingguy.jenkins](https://github.com/geerlingguy/ansible-role-jenkins).
 
 As transitive dependency this role uses the
 [wcm_io_devops.jenkins_facts](https://github.com/wcm-io-devops/ansible-jenkins-facts)
