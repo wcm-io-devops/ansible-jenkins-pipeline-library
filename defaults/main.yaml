@@ -173,14 +173,6 @@ jenkins_pipeline_library_approved_signatures_present:
   - staticMethod org.jenkinsci.plugins.pipeline.modeldefinition.Utils markStageSkippedForConditional java.lang.String
   # whitelisting for logging package
   - staticField io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel ALL
-  - staticField io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel TRACE
-  - staticField io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel DEBUG
-  - staticField io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel INFO
-  - staticField io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel DEPRECATED
-  - staticField io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel WARN
-  - staticField io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel ERROR
-  - staticField io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel FATAL
-  - staticField io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel NONE
   - staticMethod io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel fromString java.lang.String
   - staticMethod io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel fromInteger java.lang.Integer
   - staticMethod io.wcm.devops.jenkins.pipeline.utils.logging.LogLevel $INIT java.lang.Object[]
