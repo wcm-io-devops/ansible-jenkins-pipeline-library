@@ -1,5 +1,5 @@
 # The version of the jenkins when it is installed with the jenkins role dependency
-jenkins_pipeline_library_jenkins_version: 2.138.1
+jenkins_pipeline_library_jenkins_version: 2.138.3
 
 # Controls if the jenkins will be installed by the jenkins role dependency
 jenkins_pipeline_library_jenkins_install: false
@@ -55,15 +55,15 @@ jenkins_pipeline_library_plugins_present:
   - name: apache-httpcomponents-client-4-api
     version: "4.5.5-3.0"
   - name: branch-api
-    version: "2.0.20"
+    version: "2.0.21"
   - name: cloudbees-folder
     version: "6.6"
   - name: config-file-provider
-    version: "3.1"
+    version: "3.4.1"
   - name: credentials
     version: "2.1.18"
   - name: credentials-binding
-    version: "1.16"
+    version: "1.17"
   - name: display-url-api
     version: "2.2.0"
   - name: docker-workflow
@@ -71,7 +71,7 @@ jenkins_pipeline_library_plugins_present:
   - name: docker-commons
     version: "1.13"
   - name: durable-task
-    version: "1.25"
+    version: "1.27"
   - name: git
     version: "3.9.1"
   - name: git-client
@@ -81,9 +81,9 @@ jenkins_pipeline_library_plugins_present:
   - name: handlebars
     version: "1.1.1"
   - name: jackson2-api
-    version: "2.8.11.3"
+    version: "2.9.7.1"
   - name: junit
-    version: "1.25"
+    version: "1.26.1"
   - name: jquery-detached
     version: "1.2.1"
   - name: jsch
@@ -91,7 +91,7 @@ jenkins_pipeline_library_plugins_present:
   - name: managed-scripts
     version: "1.4"
   - name: mailer
-    version: "1.21"
+    version: "1.22"
   - name: managed-scripts
     version: "1.4"
   - name: matrix-project
@@ -99,7 +99,7 @@ jenkins_pipeline_library_plugins_present:
   - name: momentjs
     version: "1.1.1"
   - name: nodejs
-    version: "1.2.6"
+    version: "1.2.7"
   - name: pipeline-aggregator-view
     version: "1.8"
   - name: pipeline-build-step
@@ -127,42 +127,41 @@ jenkins_pipeline_library_plugins_present:
   - name: pipeline-stage-view
     version: "2.10"
   - name: pipeline-utility-steps
-    version: "2.1.0"
+    version: "2.2.0"
   - name: plain-credentials
     version: "1.4"
   - name: rebuild
-    version: "1.28"
+    version: "1.29"
   - name: scm-api
-    version: "2.2.7"
-    # 1.44 causes stack overflows with pipeline library
+    version: "2.3.0"
   - name: script-security
-    version: "1.46"
+    version: "1.48"
   - name: ssh-credentials
     version: "1.14"
   - name: structs
-    version: "1.14"
+    version: "1.17"
   - name: token-macro
     version: "2.5"
   - name: workflow-api
-    version: "2.29"
+    version: "2.32"
   - name: workflow-basic-steps
-    version: "2.11"
+    version: "2.12"
   - name: workflow-cps
-    version: "2.55"
+    version: "2.60"
   - name: workflow-cps-global-lib
-    version: "2.11"
+    version: "2.12"
   - name: workflow-durable-task-step
-    version: "2.21"
+    version: "2.26"
   - name: workflow-job
-    version: "2.25"
+    version: "2.29"
   - name: workflow-multibranch
     version: "2.20"
   - name: workflow-scm-step
-    version: "2.6"
+    version: "2.7"
   - name: workflow-step-api
     version: "2.16"
   - name: workflow-support
-    version: "2.20"
+    version: "2.22"
 
 # Plugins that must be absent for jenkins-pipeline-library
 jenkins_pipeline_library_plugins_absent: []
