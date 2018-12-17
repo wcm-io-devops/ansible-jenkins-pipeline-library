@@ -32,7 +32,7 @@ dependencies:
       jenkins_process_group: "{{ jenkins_pipeline_library_jenkins_process_group }}",
       tags: ['wcm_io_devops.jenkins_pipeline_library.jenkins-installation'],
       # only setup jenkins when enabled
-      when: jenkins_pipeline_library_jenkins_install == true
+      when: jenkins_pipeline_library_jenkins_install
    }
   # install plugins
   - { role: wcm_io_devops.jenkins_plugins,
