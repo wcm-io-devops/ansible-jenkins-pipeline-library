@@ -34,7 +34,7 @@ target instance.
 
 Available variables are listed below, along with their default values:
 
-    jenkins_pipeline_library_jenkins_version: 2.107.3
+    jenkins_pipeline_library_jenkins_version: # see defaults.yaml for up-to-date value
 
 The version of the jenkins when it is installed with the jenkins role dependency.
 
