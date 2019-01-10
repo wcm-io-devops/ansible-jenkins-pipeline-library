@@ -194,3 +194,5 @@ jenkins_pipeline_library_approved_signatures_present:
   # native java function whitelisting
   - method java.util.List indexOf java.lang.Object
   - new java.util.ArrayList
+  # allow creation of ExtendedChoiceParameterDefinition
+  - new com.cwctravel.hudson.plugins.extended_choice_parameter.ExtendedChoiceParameterDefinition java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String boolean boolean int java.lang.String java.lang.String
