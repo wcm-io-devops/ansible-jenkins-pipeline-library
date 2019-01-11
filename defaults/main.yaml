@@ -72,6 +72,8 @@ jenkins_pipeline_library_plugins_present:
     version: "1.13"
   - name: durable-task
     version: "1.28"
+  - name: extended-choice-parameter
+    version: "0.76"
   - name: git
     version: "3.9.1"
   - name: git-client
