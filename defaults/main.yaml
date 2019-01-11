@@ -86,6 +86,8 @@ jenkins_pipeline_library_plugins_present:
     version: "2.9.7.1"
   - name: junit
     version: "1.26.1"
+  - name: jquery
+    version: "1.12.4-0"
   - name: jquery-detached
     version: "1.2.1"
   - name: jsch
