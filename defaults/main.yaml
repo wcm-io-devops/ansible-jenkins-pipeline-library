@@ -82,6 +82,8 @@ jenkins_pipeline_library_plugins_present:
     version: "1.7"
   - name: handlebars
     version: "1.1.1"
+  - name: http_request
+    version: "1.8.22"
   - name: jackson2-api
     version: "2.9.8"
   - name: junit
