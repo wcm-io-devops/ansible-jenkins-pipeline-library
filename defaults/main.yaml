@@ -101,7 +101,7 @@ jenkins_pipeline_library_plugins_present:
   - name: managed-scripts
     version: "1.4"
   - name: matrix-project
-    version: "1.14"
+    version: "1.13"
   - name: momentjs
     version: "1.1.1"
   - name: nodejs
@@ -141,7 +141,7 @@ jenkins_pipeline_library_plugins_present:
   - name: scm-api
     version: "2.4.1"
   - name: script-security
-    version: "1.56"
+    version: "1.53"
   - name: ssh-credentials
     version: "1.15"
   - name: structs
@@ -153,7 +153,7 @@ jenkins_pipeline_library_plugins_present:
   - name: workflow-basic-steps
     version: "2.15"
   - name: workflow-cps
-    version: "2.65"
+    version: "2.63"
   - name: workflow-cps-global-lib
     version: "2.13"
   - name: workflow-durable-task-step
