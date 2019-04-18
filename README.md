@@ -54,6 +54,14 @@ Linux group of jenkins user.
 
 Package url for installing specific stable jenkins versions.
 
+    jenkins_pipeline_library_jenkins_repo_url: deb http://pkg.jenkins-ci.org/debian-stable binary/
+
+Repo url for installing stable jenkins versions.
+
+    jenkins_pipeline_library_jenkins_repo_key_url: http://pkg.jenkins-ci.org/debian-stable/jenkins-ci.org.key
+
+URL for the repo key.
+
     jenkins_pipeline_library_admin_username: admin
 
 Jenkins admin username.

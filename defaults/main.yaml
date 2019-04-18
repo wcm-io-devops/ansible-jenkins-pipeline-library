@@ -13,6 +13,12 @@ jenkins_pipeline_library_jenkins_process_group: "{{ jenkins_pipeline_library_jen
 # Package url for installing specific stable jenkins versions
 jenkins_pipeline_library_jenkins_pkg_url: https://pkg.jenkins.io/debian-stable/binary
 
+# Repo url for installing stable jenkins versions
+jenkins_pipeline_library_jenkins_repo_url: deb http://pkg.jenkins-ci.org/debian-stable binary/
+
+# URL for the repo key
+jenkins_pipeline_library_jenkins_repo_key_url: http://pkg.jenkins-ci.org/debian-stable/jenkins-ci.org.key
+
 # Jenkins admin username
 jenkins_pipeline_library_admin_username: admin
 
