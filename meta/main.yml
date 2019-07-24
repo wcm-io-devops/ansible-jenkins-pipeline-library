@@ -54,5 +54,6 @@ dependencies:
       jenkins_script_security_jenkins_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
       jenkins_script_security_jenkins_port: "{{ jenkins_pipeline_library_jenkins_port }}",
       jenkins_script_security_jenkins_url_prefix: "{{ jenkins_pipeline_library_jenkins_url_prefix }}",
-      jenkins_script_security_approved_signatures_present: "{{ jenkins_pipeline_library_approved_signatures_present }}"
+      jenkins_script_security_approved_signatures_present: "{{ jenkins_pipeline_library_approved_signatures_present }}",
+      tags: ['wcm_io_devops.jenkins_pipeline_library.jenkins_script_security']
     }
