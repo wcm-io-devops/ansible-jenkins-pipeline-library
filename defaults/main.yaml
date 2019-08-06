@@ -1,5 +1,5 @@
 # The version of the jenkins when it is installed with the jenkins role dependency
-jenkins_pipeline_library_jenkins_version: 2.176.1
+jenkins_pipeline_library_jenkins_version: 2.176.2
 
 # Controls if the jenkins will be installed by the jenkins role dependency
 jenkins_pipeline_library_jenkins_install: false
@@ -52,28 +52,27 @@ jenkins_pipeline_library_plugins_present:
   - name: apache-httpcomponents-client-4-api
     version: "4.5.5-3.0"
   - name: branch-api
-    version: "2.5.2"
+    version: "2.5.4"
   - name: cloudbees-folder
     version: "6.9"
   - name: config-file-provider
     version: "3.6.2"
-  # do not update until configuration-as-code is 1.14+
   - name: credentials
-    version: "2.1.19"
+    version: "2.2.1"
   - name: credentials-binding
     version: "1.19"
   - name: display-url-api
-    version: "2.3.1"
+    version: "2.3.2"
   - name: docker-workflow
-    version: "1.18"
+    version: "1.19"
   - name: docker-commons
     version: "1.15"
   - name: durable-task
-    version: "1.29"
+    version: "1.30"
   - name: extended-choice-parameter
     version: "0.78"
   - name: git
-    version: "3.10.0"
+    version: "3.11.0"
   - name: git-client
     version: "2.8.0"
   - name: git-server
@@ -83,25 +82,23 @@ jenkins_pipeline_library_plugins_present:
   - name: http_request
     version: "1.8.23"
   - name: jackson2-api
-    version: "2.9.9"
-  # do not update until script security can be updated to 1.56+
+    version: "2.9.9.1"
   - name: junit
-    version: "1.27"
+    version: "1.28"
   - name: jquery
     version: "1.12.4-0"
   - name: jquery-detached
     version: "1.2.1"
   - name: jsch
-    version: "0.1.55"
+    version: "0.1.55.1"
   - name: managed-scripts
     version: "1.4"
   - name: mailer
-    version: "1.23"
+    version: "1.24"
   - name: managed-scripts
     version: "1.4"
-  # do not update until script-security is 1.54+
   - name: matrix-project
-    version: "1.13"
+    version: "1.14"
   - name: momentjs
     version: "1.1.1"
   - name: nodejs
@@ -110,34 +107,28 @@ jenkins_pipeline_library_plugins_present:
     version: "1.8"
   - name: pipeline-build-step
     version: "2.9"
-  # do not update until workflow-cps can be updated to 2.65+
   - name: pipeline-graph-analysis
-    version: "1.9"
+    version: "1.10"
   - name: pipeline-input-step
     version: "2.10"
   - name: pipeline-milestone-step
     version: "1.3.1"
   - name: pipeline-model-declarative-agent
     version: "1.1.1"
-  # do not update until workflow-cps is 2.70+
   - name: pipeline-model-definition
-    version: "1.3.8"
-  # do not update until workflow-cps is 2.70+
+    version: "1.3.9"
   - name: pipeline-model-api
-    version: "1.3.8"
-  # do not update until workflow-cps is 2.70+
+    version: "1.3.9"
   - name: pipeline-model-extensions
-    version: "1.3.8"
+    version: "1.3.9"
   - name: pipeline-rest-api
-    version: "2.11"
+    version: "2.12"
   - name: pipeline-stage-step
     version: "2.3"
-  # do not update until workflow-cps is 2.70+
   - name: pipeline-stage-tags-metadata
-    version: "1.3.8"
-
+    version: "1.3.9"
   - name: pipeline-stage-view
-    version: "2.11"
+    version: "2.12"
   - name: pipeline-utility-steps
     version: "2.3.0"
   - name: plain-credentials
@@ -145,37 +136,33 @@ jenkins_pipeline_library_plugins_present:
   - name: rebuild
     version: "1.31"
   - name: scm-api
-    version: "2.5.1"
-  # do not update due to https://issues.jenkins-ci.org/browse/JENKINS-56682
+    version: "2.6.3"
   - name: script-security
-    version: "1.53"
-  # do not update until credentials plugin is 2.2.0+
+    version: "1.62"
   - name: ssh-credentials
-    version: "1.16"
+    version: "1.17.1"
   - name: structs
-    version: "1.19"
+    version: "1.20"
   - name: token-macro
     version: "2.8"
   - name: workflow-api
-    version: "2.35"
-  # do not update, requires workflow-durable-task-step > 2.31
+    version: "2.36"
   - name: workflow-basic-steps
-    version: "2.15"
-  # do not update due to https://issues.jenkins-ci.org/browse/JENKINS-56682
+    version: "2.18"
   - name: workflow-cps
-    version: "2.63"
+    version: "2.73"
   - name: workflow-cps-global-lib
-    version: "2.13"
+    version: "2.15"
   - name: workflow-durable-task-step
-    version: "2.30"
+    version: "2.33"
   - name: workflow-job
-    version: "2.32"
+    version: "2.33"
   - name: workflow-multibranch
     version: "2.21"
   - name: workflow-scm-step
     version: "2.9"
   - name: workflow-step-api
-    version: "2.19"
+    version: "2.20"
   - name: workflow-support
     version: "3.3"
 
@@ -217,3 +204,4 @@ jenkins_pipeline_library_approved_signatures_present:
   - method java.util.Calendar setTime java.util.Date
   - method java.util.Calendar set int int
   - staticMethod org.codehaus.groovy.runtime.DateGroovyMethods format java.util.Calendar java.lang.String
+  - method java.lang.Class getCanonicalName
