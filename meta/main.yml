@@ -35,7 +35,7 @@ dependencies:
    }
   # install plugins
   - { role: wcm_io_devops.jenkins_plugins,
-      version: 1.2.1,
+      version: 1.2.2,
       jenkins_plugins_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
       jenkins_plugins_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
       jenkins_plugins_jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",
@@ -47,7 +47,7 @@ dependencies:
    }
   # configure script security for jenkins-pipeline-library
   - { role: wcm_io_devops.jenkins_script_security,
-      version: 1.1.1,
+      version: 1.1.2,
       jenkins_script_security_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
       jenkins_script_security_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
       jenkins_script_security_jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",
