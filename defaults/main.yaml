@@ -51,10 +51,14 @@ jenkins_pipeline_library_plugins_present:
     version: "1.3"
   - name: apache-httpcomponents-client-4-api
     version: "4.5.5-3.0"
+  - name: bouncycastle-api
+    version: "2.17"
   - name: branch-api
     version: "2.5.4"
   - name: cloudbees-folder
     version: "6.9"
+  - name: command-launcher
+    version: "1.3"
   - name: config-file-provider
     version: "3.6.2"
   - name: credentials
@@ -76,13 +80,15 @@ jenkins_pipeline_library_plugins_present:
   - name: git-client
     version: "2.8.0"
   - name: git-server
-    version: "1.7"
+    version: "1.8"
   - name: handlebars
     version: "1.1.1"
   - name: http_request
     version: "1.8.23"
   - name: jackson2-api
     version: "2.9.9.1"
+  - name: jdk-tool
+    version: "1.3"
   - name: junit
     version: "1.28"
   - name: jquery
