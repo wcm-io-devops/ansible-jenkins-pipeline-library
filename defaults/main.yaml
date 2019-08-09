@@ -147,6 +147,8 @@ jenkins_pipeline_library_plugins_present:
     version: "1.62"
   - name: ssh-credentials
     version: "1.17.1"
+  - name: ssh-steps
+    version: "2.0.0"
   - name: structs
     version: "1.20"
   - name: token-macro
