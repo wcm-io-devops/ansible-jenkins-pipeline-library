@@ -75,6 +75,8 @@ jenkins_pipeline_library_plugins_present:
     version: "1.33"
   - name: extended-choice-parameter
     version: "0.78"
+  - name: email-ext
+    version: "2.68"
   - name: git
     version: "4.0.0"
   - name: git-client
