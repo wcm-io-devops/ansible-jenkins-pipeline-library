@@ -105,6 +105,8 @@ jenkins_pipeline_library_plugins_present:
     version: "1.29"
   - name: managed-scripts
     version: "1.4"
+  - name: mattermost
+    version: "3.0.1"
   - name: matrix-project
     version: "1.14"
   - name: momentjs
