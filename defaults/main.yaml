@@ -1,5 +1,5 @@
 # The version of the jenkins when it is installed with the jenkins role dependency
-jenkins_pipeline_library_jenkins_version: 2.204.2
+jenkins_pipeline_library_jenkins_version: 2.204.4
 
 # Controls if the jenkins will be installed by the jenkins role dependency
 jenkins_pipeline_library_jenkins_install: false
@@ -62,15 +62,15 @@ jenkins_pipeline_library_plugins_present:
   - name: config-file-provider
     version: "3.6.3"
   - name: configuration-as-code
-    version: "1.35"
+    version: "1.36"
   - name: credentials
-    version: "2.3.1"
+    version: "2.3.3"
   - name: credentials-binding
-    version: "1.20"
+    version: "1.21"
   - name: display-url-api
     version: "2.3.2"
   - name: docker-workflow
-    version: "1.21"
+    version: "1.22"
   - name: docker-commons
     version: "1.16"
   - name: durable-task
@@ -78,11 +78,11 @@ jenkins_pipeline_library_plugins_present:
   - name: extended-choice-parameter
     version: "0.78"
   - name: email-ext
-    version: "2.68"
+    version: "2.69"
   - name: git
-    version: "4.1.1"
+    version: "4.2.0"
   - name: git-client
-    version: "3.1.1"
+    version: "3.2.0"
   - name: git-server
     version: "1.9"
   - name: handlebars
@@ -152,7 +152,7 @@ jenkins_pipeline_library_plugins_present:
   - name: scm-api
     version: "2.6.3"
   - name: script-security
-    version: "1.69"
+    version: "1.70"
   - name: ssh-credentials
     version: "1.18.1"
   - name: ssh-steps
@@ -162,15 +162,15 @@ jenkins_pipeline_library_plugins_present:
   - name: structs
     version: "1.20"
   - name: token-macro
-    version: "2.10"
+    version: "2.12"
   - name: trilead-api
     version: "1.0.5"
   - name: workflow-api
-    version: "2.39"
+    version: "2.40"
   - name: workflow-basic-steps
     version: "2.19"
   - name: workflow-cps
-    version: "2.78"
+    version: "2.80"
   - name: workflow-cps-global-lib
     version: "2.15"
   - name: workflow-durable-task-step
