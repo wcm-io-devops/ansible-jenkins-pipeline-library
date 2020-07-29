@@ -229,3 +229,10 @@ jenkins_pipeline_library_approved_signatures_present:
   - method java.util.Calendar set int int
   - staticMethod org.codehaus.groovy.runtime.DateGroovyMethods format java.util.Calendar java.lang.String
   - method java.lang.Class getCanonicalName
+
+# Alternative URL to use for retrieving jenkins packages
+# geerlingguy.jenkins sets a sensible default if this is empty
+# Packages are retrieved using:
+#   url: "{{ jenkins_pkg_url }}/jenkins_{{ jenkins_version }}_all.deb"
+jenkins_pipeline_library_jenkins_pkg_url = ""
+
