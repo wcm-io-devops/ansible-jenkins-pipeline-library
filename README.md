@@ -28,7 +28,12 @@ So for example:
 ## Requirements
 
 This role requires Ansible 2.4 or higher and a running Jenkins on the
-target instance.
+target instance. If this role is taking care about the jenkins installation process you need to have java installed on the target machine.
+Please also have a look at https://github.com/geerlingguy/ansible-role-jenkins.
+
+For the java installation we recommend:
+* https://galaxy.ansible.com/srsp/oracle-java or
+* https://galaxy.ansible.com/geerlingguy/java
 
 ## Role Variables
 
