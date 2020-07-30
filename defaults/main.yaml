@@ -234,5 +234,5 @@ jenkins_pipeline_library_approved_signatures_present:
 # geerlingguy.jenkins sets a sensible default if this is empty
 # Packages are retrieved using:
 #   url: "{{ jenkins_pkg_url }}/jenkins_{{ jenkins_version }}_all.deb"
-jenkins_pipeline_library_jenkins_pkg_url = ""
+jenkins_pipeline_library_jenkins_pkg_url: ""
 
