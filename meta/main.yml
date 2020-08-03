@@ -30,7 +30,7 @@ dependencies:
       jenkins_process_user: "{{ jenkins_pipeline_library_jenkins_process_user }}",
       jenkins_process_group: "{{ jenkins_pipeline_library_jenkins_process_group }}",
       jenkins_pkg_url: "{{ jenkins_pipeline_library_jenkins_pkg_url }}",
-      jenkins_java_options: "{{ jenkins_pipeline_library_jenkins_java_options }}"
+      jenkins_java_options: "{{ jenkins_pipeline_library_jenkins_java_options }}",
       tags: ['wcm_io_devops.jenkins_pipeline_library.jenkins-installation'],
       # only setup jenkins when enabled
       when: jenkins_pipeline_library_jenkins_install | bool
