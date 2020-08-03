@@ -143,11 +143,22 @@ instance.
 ## Example Playbook
 
 Prepares the Jenkins instance for the use of the
-https://github.com/wcm-io-devops/jenkins-pipeline-library.
+https://github.com/wcm-io-devops/jenkins-pipeline-library on a debian
+based OS.
 
-	- hosts: jenkins
-	  roles:
-	    - role: wcm_io_devops.jenkins_pipeline_library
+	- hosts: localhost
+      become: yes
+      vars:
+        # values for geerlingguy.jenkins
+        jenkins_prefer_lts: true
+        # required until https://github.com/geerlingguy/ansible-role-jenkins/pull/294 is merged    
+        jenkins_pkg_url: "https://pkg.jenkins.io/debian-stable/binary"
+        
+        # values for wcm_io_devops.jenkins_pipeline_library
+        jenkins_pipeline_library_jenkins_install: true
+      roles:
+        - role: geerlingguy.java
+        - role: wcm_io_devops.jenkins_pipeline_library
 
 ## License
 
