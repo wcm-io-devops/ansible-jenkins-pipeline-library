@@ -236,3 +236,8 @@ jenkins_pipeline_library_approved_signatures_present:
 #   url: "{{ jenkins_pkg_url }}/jenkins_{{ jenkins_version }}_all.deb"
 jenkins_pipeline_library_jenkins_pkg_url: ""
 
+# Extra Java options for the Jenkins launch command configured in the init file.
+# Defaults to same default as geerlingguy's default
+jenkins_pipline_library_jenkins_java_options: "-Djenkins.install.runSetupWizard=false"
+
+
