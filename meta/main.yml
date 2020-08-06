@@ -20,7 +20,7 @@ galaxy_info:
 dependencies:
   # install jenkins
   - { role: geerlingguy.jenkins,
-      version: 3.7.0,
+      version: 4.3.0,
       jenkins_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
       jenkins_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
       jenkins_http_port: "{{ jenkins_pipeline_library_jenkins_port }}",
