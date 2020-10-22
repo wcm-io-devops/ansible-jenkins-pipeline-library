@@ -13,49 +13,55 @@ galaxy_info:
     - stretch
 
   galaxy_tags:
-    - jenkins
-    - pipeline
-    - wcmio
+  - jenkins
+  - pipeline
+  - wcmio
 
 dependencies:
-  # install jenkins
-  - { role: geerlingguy.jenkins,
-      version: 3.7.0,
-      jenkins_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
-      jenkins_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
-      jenkins_http_port: "{{ jenkins_pipeline_library_jenkins_port }}",
-      jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",
-      jenkins_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
-      jenkins_version: "{{ jenkins_pipeline_library_jenkins_version }}",
-      jenkins_process_user: "{{ jenkins_pipeline_library_jenkins_process_user }}",
-      jenkins_process_group: "{{ jenkins_pipeline_library_jenkins_process_group }}",
-      jenkins_pkg_url: "{{ jenkins_pipeline_library_jenkins_pkg_url }}",
-      jenkins_java_options: "{{ jenkins_pipeline_library_jenkins_java_options }}",
-      tags: ['wcm_io_devops.jenkins_pipeline_library.jenkins-installation'],
-      # only setup jenkins when enabled
-      when: jenkins_pipeline_library_jenkins_install | bool
-   }
-  # install plugins
-  - { role: wcm_io_devops.jenkins_plugins,
-      version: 1.2.2,
-      jenkins_plugins_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
-      jenkins_plugins_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
-      jenkins_plugins_jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",
-      jenkins_plugins_jenkins_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
-      jenkins_plugins_jenkins_port: "{{ jenkins_pipeline_library_jenkins_port }}",
-      jenkins_plugins_jenkins_url_prefix: "{{ jenkins_pipeline_library_jenkins_url_prefix }}",
-      jenkins_plugins_present: "{{ jenkins_pipeline_library_plugins_present }}",
-      jenkins_plugins_absent: "{{ jenkins_pipeline_library_plugins_absent }}",
-   }
-  # configure script security for jenkins-pipeline-library
-  - { role: wcm_io_devops.jenkins_script_security,
-      version: 1.1.2,
-      jenkins_script_security_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
-      jenkins_script_security_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
-      jenkins_script_security_jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",
-      jenkins_script_security_jenkins_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
-      jenkins_script_security_jenkins_port: "{{ jenkins_pipeline_library_jenkins_port }}",
-      jenkins_script_security_jenkins_url_prefix: "{{ jenkins_pipeline_library_jenkins_url_prefix }}",
-      jenkins_script_security_approved_signatures_present: "{{ jenkins_pipeline_library_approved_signatures_present }}",
-      tags: ['wcm_io_devops.jenkins_pipeline_library.jenkins_script_security']
-    }
+# install jenkins
+- { role: geerlingguy.jenkins,
+    version: 3.7.0,
+    jenkins_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
+    jenkins_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
+    jenkins_http_port: "{{ jenkins_pipeline_library_jenkins_port }}",
+    jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",
+    jenkins_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
+    jenkins_version: "{{ jenkins_pipeline_library_jenkins_version }}",
+    jenkins_process_user: "{{ jenkins_pipeline_library_jenkins_process_user }}",
+    jenkins_process_group: "{{ jenkins_pipeline_library_jenkins_process_group }}",
+    jenkins_pkg_url: "{{ jenkins_pipeline_library_jenkins_pkg_url }}",
+    jenkins_java_options: "{{ jenkins_pipeline_library_jenkins_java_options }}",
+    jenkins_init_changes: [
+      { option: "JENKINS_ARGS",
+        value: "{{ jenkins_pipeline_library_jenkins_args }}" },
+      { option: "{{ jenkins_java_options_env_var }}",  # this var set in jenkins role per OS
+        value: "{{ jenkins_java_options }}" }
+    ],
+    tags: ['wcm_io_devops.jenkins_pipeline_library.jenkins-installation'],
+    # only setup jenkins when enabled
+    when: jenkins_pipeline_library_jenkins_install | bool
+}
+# install plugins
+- { role: wcm_io_devops.jenkins_plugins,
+    version: 1.2.2,
+    jenkins_plugins_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
+    jenkins_plugins_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
+    jenkins_plugins_jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",
+    jenkins_plugins_jenkins_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
+    jenkins_plugins_jenkins_port: "{{ jenkins_pipeline_library_jenkins_port }}",
+    jenkins_plugins_jenkins_url_prefix: "{{ jenkins_pipeline_library_jenkins_url_prefix }}",
+    jenkins_plugins_present: "{{ jenkins_pipeline_library_plugins_present }}",
+    jenkins_plugins_absent: "{{ jenkins_pipeline_library_plugins_absent }}",
+}
+# configure script security for jenkins-pipeline-library
+- { role: wcm_io_devops.jenkins_script_security,
+    version: 1.1.2,
+    jenkins_script_security_admin_username: "{{ jenkins_pipeline_library_admin_username }}",
+    jenkins_script_security_admin_password: "{{ jenkins_pipeline_library_admin_password }}",
+    jenkins_script_security_jenkins_home: "{{ jenkins_pipeline_library_jenkins_home }}",
+    jenkins_script_security_jenkins_hostname: "{{ jenkins_pipeline_library_jenkins_hostname }}",
+    jenkins_script_security_jenkins_port: "{{ jenkins_pipeline_library_jenkins_port }}",
+    jenkins_script_security_jenkins_url_prefix: "{{ jenkins_pipeline_library_jenkins_url_prefix }}",
+    jenkins_script_security_approved_signatures_present: "{{ jenkins_pipeline_library_approved_signatures_present }}",
+    tags: ['wcm_io_devops.jenkins_pipeline_library.jenkins_script_security']
+}

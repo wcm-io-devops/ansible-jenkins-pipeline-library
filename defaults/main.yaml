@@ -222,7 +222,12 @@ jenkins_pipeline_library_approved_signatures_present:
   - method java.util.List indexOf java.lang.Object
   - new java.util.ArrayList
   # allow creation of ExtendedChoiceParameterDefinition
-  - new com.cwctravel.hudson.plugins.extended_choice_parameter.ExtendedChoiceParameterDefinition java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String boolean boolean int java.lang.String java.lang.String
+  - new com.cwctravel.hudson.plugins.extended_choice_parameter.ExtendedChoiceParameterDefinition
+    java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String
+    java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String
+    java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String
+    java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String
+    java.lang.String java.lang.String boolean boolean int java.lang.String java.lang.String
   - new java.text.SimpleDateFormat java.lang.String java.util.Locale
   - method java.text.DateFormat parse java.lang.String
   - method java.util.Calendar setTime java.util.Date
@@ -239,5 +244,4 @@ jenkins_pipeline_library_jenkins_pkg_url: ""
 # Extra Java options for the Jenkins launch command configured in the init file.
 # Defaults to same default as geerlingguy's default
 jenkins_pipline_library_jenkins_java_options: "-Djenkins.install.runSetupWizard=false"
-
-
+jenkins_pipeline_library_jenkins_args: ""
