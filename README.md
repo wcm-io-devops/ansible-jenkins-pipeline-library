@@ -28,7 +28,12 @@ So for example:
 ## Requirements
 
 This role requires Ansible 2.4 or higher and a running Jenkins on the
-target instance.
+target instance. If this role is taking care about the jenkins installation process you need to have java installed on the target machine.
+Please also have a look at https://github.com/geerlingguy/ansible-role-jenkins.
+
+For the java installation we recommend:
+* https://galaxy.ansible.com/srsp/oracle-java or
+* https://galaxy.ansible.com/geerlingguy/java
 
 ## Role Variables
 
@@ -138,11 +143,22 @@ instance.
 ## Example Playbook
 
 Prepares the Jenkins instance for the use of the
-https://github.com/wcm-io-devops/jenkins-pipeline-library.
+https://github.com/wcm-io-devops/jenkins-pipeline-library on a debian
+based OS.
 
-	- hosts: jenkins
-	  roles:
-	    - role: wcm_io_devops.jenkins_pipeline_library
+	- hosts: localhost
+      become: yes
+      vars:
+        # values for geerlingguy.jenkins
+        jenkins_prefer_lts: true
+        # required until https://github.com/geerlingguy/ansible-role-jenkins/pull/294 is merged    
+        jenkins_pkg_url: "https://pkg.jenkins.io/debian-stable/binary"
+        
+        # values for wcm_io_devops.jenkins_pipeline_library
+        jenkins_pipeline_library_jenkins_install: true
+      roles:
+        - role: geerlingguy.java
+        - role: wcm_io_devops.jenkins_pipeline_library
 
 ## License
 
