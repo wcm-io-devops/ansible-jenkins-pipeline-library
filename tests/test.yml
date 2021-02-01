@@ -1,4 +1,5 @@
+---
 - name: test role syntax
   hosts: test
   roles:
-    - ansible-jenkins-pipeline-library
+    - wcm_io_devops.jenkins_pipeline_library
