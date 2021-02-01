@@ -8,4 +8,4 @@
 - name: wcm_io_devops.jenkins_script_security
   version: master
 - name: geerlingguy.jenkins
-  version: 3.6.0
+  version: 4.3.0
