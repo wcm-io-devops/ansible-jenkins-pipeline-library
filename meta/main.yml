@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   role_name: jenkins_pipeline_library
+  namespace: wcm_io_devops
   author: Tobias Richter
   description: Ansible role for setting up a Jenkins instance for the jenkins-pipeline-library.
   company: pro!vision
