@@ -1,6 +1,6 @@
 ---
 # The version of the jenkins when it is installed with the jenkins role dependency
-jenkins_pipeline_library_jenkins_version: 2.277.3
+jenkins_pipeline_library_jenkins_version: 2.289.1
 
 # Controls if the jenkins will be installed by the jenkins role dependency
 jenkins_pipeline_library_jenkins_install: false
@@ -60,53 +60,55 @@ jenkins_pipeline_library_plugins_present:
   - name: bouncycastle-api
     version: "2.20"
   - name: branch-api
-    version: "2.6.3"
+    version: "2.6.4"
+  - name: caffeine-api
+    version: "2.9.1-23.v51c4e2c879c8"
   - name: checks-api
     version: "1.7.0"
   - name: cloudbees-folder
     version: "6.15"
   - name: command-launcher
-    version: "1.5"
+    version: "1.6"
   - name: config-file-provider
-    version: "3.7.1"
+    version: "3.8.0"
   - name: configuration-as-code
-    version: "1.47"
+    version: "1.51"
   - name: credentials
-    version: "2.3.18"
+    version: "2.5"
   - name: credentials-binding
-    version: "1.24"
+    version: "1.25"
   - name: display-url-api
-    version: "2.3.4"
+    version: "2.3.5"
   - name: docker-workflow
     version: "1.26"
   - name: docker-commons
     version: "1.17"
   - name: durable-task
-    version: "1.35"
+    version: "1.37"
   - name: echarts-api
-    version: "5.0.2-1"
+    version: "5.1.0-2"
   - name: extended-choice-parameter
     version: "0.82"
   - name: email-ext
-    version: "2.82"
+    version: "2.83"
   - name: font-awesome-api
-    version: "5.15.2-2"
+    version: "5.15.3-2"
   - name: git
-    version: "4.7.1"
+    version: "4.7.2"
   - name: git-client
-    version: "3.7.1"
+    version: "3.7.2"
   - name: git-server
     version: "1.9"
   - name: handlebars
     version: "3.0.8"
   - name: http_request
-    version: "1.8.27"
+    version: "1.9.0"
   - name: jackson2-api
     version: "2.12.3"
   - name: jdk-tool
     version: "1.5"
   - name: junit
-    version: "1.49"
+    version: "1.50"
   - name: jquery
     version: "1.12.4-1"
   - name: jquery-detached
@@ -124,7 +126,7 @@ jenkins_pipeline_library_plugins_present:
   - name: mattermost
     version: "3.1.1"
   - name: matrix-project
-    version: "1.18"
+    version: "1.19"
   - name: momentjs
     version: "1.1.1"
   - name: mqtt-notification-plugin
@@ -132,13 +134,13 @@ jenkins_pipeline_library_plugins_present:
   - name: nodejs
     version: "1.4.0"
   - name: Office-365-Connector
-    version: "4.14.0"
+    version: "4.15.0"
   - name: pipeline-aggregator-view
     version: "1.11"
   - name: pipeline-build-step
     version: "2.13"
   - name: pipeline-graph-analysis
-    version: "1.10"
+    version: "1.11"
   - name: pipeline-input-step
     version: "2.12"
   - name: pipeline-milestone-step
@@ -146,25 +148,25 @@ jenkins_pipeline_library_plugins_present:
   - name: pipeline-model-declarative-agent
     version: "1.1.1"
   - name: pipeline-model-definition
-    version: "1.8.4"
+    version: "1.8.5"
   - name: pipeline-model-api
-    version: "1.8.4"
+    version: "1.8.5"
   - name: pipeline-model-extensions
-    version: "1.8.4"
+    version: "1.8.5"
   - name: pipeline-rest-api
     version: "2.19"
   - name: pipeline-stage-step
     version: "2.5"
   - name: pipeline-stage-tags-metadata
-    version: "1.8.4"
+    version: "1.8.5"
   - name: pipeline-stage-view
     version: "2.19"
   - name: pipeline-utility-steps
-    version: "2.7.1"
+    version: "2.8.0"
   - name: plain-credentials
     version: "1.7"
   - name: plugin-util-api
-    version: "2.1.0"
+    version: "2.2.0"
   - name: popper-api
     version: "1.16.1-2"
   - name: rebuild
@@ -172,35 +174,35 @@ jenkins_pipeline_library_plugins_present:
   - name: scm-api
     version: "2.6.4"
   - name: script-security
-    version: "1.76"
+    version: "1.77"
   - name: ssh-credentials
-    version: "1.18.1"
+    version: "1.19"
   - name: ssh-steps
     version: "2.0.0"
   - name: ssh-slaves
-    version: "1.31.5"
+    version: "1.32.0"
   - name: snakeyaml-api
     version: "1.27.0"
   - name: structs
-    version: "1.22"
+    version: "1.23"
   - name: token-macro
     version: "2.15"
   - name: trilead-api
     version: "1.0.13"
   - name: workflow-api
-    version: "2.42"
+    version: "2.44"
   - name: workflow-basic-steps
     version: "2.23"
   - name: workflow-cps
-    version: "2.90"
+    version: "2.92"
   - name: workflow-cps-global-lib
-    version: "2.18"
+    version: "2.19"
   - name: workflow-durable-task-step
-    version: "2.38"
+    version: "2.39"
   - name: workflow-job
-    version: "2.40"
+    version: "2.41"
   - name: workflow-multibranch
-    version: "2.23"
+    version: "2.24"
   - name: workflow-scm-step
     version: "2.12"
   - name: workflow-step-api
