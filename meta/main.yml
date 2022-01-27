@@ -63,3 +63,4 @@ dependencies:
     jenkins_script_security_approved_signatures_present: "{{ jenkins_pipeline_library_approved_signatures_present }}"
     tags:
       - 'wcm_io_devops.jenkins_pipeline_library.jenkins_script_security'
+      - "wcm_io_devops.jenkins_script_security"
