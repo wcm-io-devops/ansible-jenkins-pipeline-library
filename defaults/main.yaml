@@ -49,10 +49,14 @@ jenkins_pipeline_library_debug: false
 
 # Plugins and their versions that must be present for jenkins-pipeline-library
 jenkins_pipeline_library_plugins_present:
+  - name: analysis-model-api
+    version: "10.9.1"
   - name: ace-editor
     version: "1.1"
   - name: authentication-tokens
     version: "1.4"
+  - name: antisamy-markup-formatter
+    version: "2.7"
   - name: apache-httpcomponents-client-4-api
     version: "4.5.13-1.0"
   - name: bootstrap4-api
@@ -79,6 +83,8 @@ jenkins_pipeline_library_plugins_present:
     version: "1074.v60e6c29b_b_44b_"
   - name: credentials-binding
     version: "1.27.1"
+  - name: data-tables-api
+    version: "1.11.3-6"
   - name: display-url-api
     version: "2.3.5"
   - name: docker-workflow
@@ -95,6 +101,8 @@ jenkins_pipeline_library_plugins_present:
     version: "2.87"
   - name: font-awesome-api
     version: "5.15.4-5"
+  - name: forensics-api
+    version: "1.7.0"
   - name: git
     version: "4.10.3"
   - name: git-client
@@ -107,6 +115,8 @@ jenkins_pipeline_library_plugins_present:
     version: "1.13"
   - name: jackson2-api
     version: "2.13.1-246.va8a9f3eaf46a"
+  - name: javadoc
+    version: "1.6"
   - name: javax-activation-api
     version: "1.2.0-2"
   - name: javax-mail-api
@@ -177,6 +187,8 @@ jenkins_pipeline_library_plugins_present:
     version: "1.16.1-2"
   - name: popper2-api
     version: 2.11.2-1
+  - name: prism-api
+    version: 1.25.0-2
   - name: rebuild
     version: "1.33"
   - name: scm-api
@@ -199,6 +211,8 @@ jenkins_pipeline_library_plugins_present:
     version: "267.vcdaea6462991"
   - name: trilead-api
     version: "1.0.13"
+  - name: warnings-ng
+    version: "9.11.0"
   - name: workflow-api
     version: "1136.v7f5f1759dc16"
   - name: workflow-basic-steps
