@@ -1,6 +1,6 @@
 ---
 # The version of the jenkins when it is installed with the jenkins role dependency
-jenkins_pipeline_library_jenkins_version: "2.319.2"
+jenkins_pipeline_library_jenkins_version: "2.319.3"
 
 # Controls if the jenkins will be installed by the jenkins role dependency
 jenkins_pipeline_library_jenkins_install: false
@@ -49,16 +49,16 @@ jenkins_pipeline_library_debug: false
 
 # Plugins and their versions that must be present for jenkins-pipeline-library
 jenkins_pipeline_library_plugins_present:
-  - name: analysis-model-api
-    version: "10.9.1"
   - name: ace-editor
     version: "1.1"
-  - name: authentication-tokens
-    version: "1.4"
+  - name: analysis-model-api
+    version: "10.9.1"
   - name: antisamy-markup-formatter
     version: "2.7"
   - name: apache-httpcomponents-client-4-api
     version: "4.5.13-1.0"
+  - name: authentication-tokens
+    version: "1.4"
   - name: bootstrap4-api
     version: "4.6.0-3"
   - name: bootstrap5-api
