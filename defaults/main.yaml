@@ -186,7 +186,7 @@ jenkins_pipeline_library_plugins_present:
   - name: popper-api
     version: "1.16.1-2"
   - name: popper2-api
-    version: 2.11.2-1
+    version: "2.11.2-1"
   - name: prism-api
     version: "1.26.0-2"
   - name: rebuild
