@@ -1,6 +1,6 @@
 ---
 # The version of the jenkins when it is installed with the jenkins role dependency
-jenkins_pipeline_library_jenkins_version: "2.319.3"
+jenkins_pipeline_library_jenkins_version: "2.346.2"
 
 # Controls if the jenkins will be installed by the jenkins role dependency
 jenkins_pipeline_library_jenkins_install: false
@@ -52,99 +52,111 @@ jenkins_pipeline_library_plugins_present:
   - name: ace-editor
     version: "1.1"
   - name: analysis-model-api
-    version: "10.9.2"
+    version: "10.15.0"
   - name: antisamy-markup-formatter
     version: "2.7"
   - name: apache-httpcomponents-client-4-api
-    version: "4.5.13-1.0"
+    version: "4.5.13-138.v4e7d9a_7b_a_e61"
   - name: authentication-tokens
     version: "1.4"
   - name: bootstrap4-api
-    version: "4.6.0-3"
+    version: "4.6.0-5"
   - name: bootstrap5-api
-    version: "5.1.3-6"
+    version: "5.1.3-7"
   - name: bouncycastle-api
-    version: "2.25"
+    version: "2.26"
   - name: branch-api
-    version: "2.7.0"
+    version: "2.1046.v0ca_37783ecc5"
   - name: caffeine-api
-    version: "2.9.2-29.v717aac953ff3"
+    version: "2.9.3-65.v6a_47d0f4d1fe"
   - name: checks-api
-    version: "1.7.2"
+    version: "1.7.4"
   - name: cloudbees-folder
-    version: "6.708.ve61636eb_65a_5"
+    version: "6.740.ve4f4ffa_dea_54"
   - name: command-launcher
-    version: "1.6"
+    version: "84.v4a_97f2027398"
   - name: config-file-provider
-    version: "3.9.0"
+    version: "3.11.1"
   - name: configuration-as-code
-    version: "1414.v878271fc496f"
+    version: "1512.vb_79d418d5fc8"
   - name: credentials
-    version: "1074.v60e6c29b_b_44b_"
+    version: "1139.veb_9579fca_33b_"
   - name: credentials-binding
-    version: "1.27.1"
+    version: "523.vd859a_4b_122e6"
+  - name: dashboard-view
+    version: "2.447.vda_124dd35f11"
   - name: data-tables-api
-    version: "1.11.4-1"
+    version: "1.12.1-2"
   - name: display-url-api
-    version: "2.3.5"
+    version: "2.3.6"
   - name: docker-workflow
-    version: "1.28"
+    version: "1.29"
   - name: docker-commons
     version: "1.19"
   - name: durable-task
-    version: "493.v195aefbb0ff2"
+    version: "496.va67c6f9eefa7"
   - name: echarts-api
-    version: "5.3.0-2"
+    version: "5.3.3-1"
   - name: extended-choice-parameter
     version: "346.vd87693c5a_86c"
   - name: email-ext
-    version: "2.87"
+    version: "2.91"
   - name: font-awesome-api
-    version: "6.0.0-1"
+    version: "6.1.1-1"
   - name: forensics-api
-    version: "1.8.1"
+    version: "1.15.1"
   - name: git
-    version: "4.10.3"
+    version: "4.11.4"
   - name: git-client
-    version: "3.11.0"
+    version: "3.11.2"
   - name: git-server
-    version: "1.10"
+    version: "1.11"
   - name: handlebars
     version: "3.0.8"
   - name: http_request
-    version: "1.14"
+    version: "1.16"
   - name: jackson2-api
-    version: "2.13.1-246.va8a9f3eaf46a"
+    version: "2.13.3-285.vc03c0256d517"
+  - name: jakarta-activation-api
+    version: "2.0.1-1"
+  - name: jakarta-mail-api
+    version: "2.0.0-6"
   - name: javadoc
     version: "217.v905b_86277a_2a_"
   - name: javax-activation-api
-    version: "1.2.0-2"
+    version: "1.2.0-4"
   - name: javax-mail-api
-    version: "1.6.2-5"
+    version: "1.6.2-7"
+  - name: jaxb
+    version: "2.3.6-1"
   - name: jdk-tool
-    version: "1.5"
+    version: "55.v1b_32b_6ca_f9ca"
   - name: junit
-    version: "1.54"
+    version: "1119.1121.vc43d0fc45561"
   - name: jquery
     version: "1.12.4-1"
   - name: jquery-detached
     version: "1.2.1"
   - name: jquery3-api
-    version: "3.6.0-2"
+    version: "3.6.0-4"
   - name: jsch
-    version: "0.1.55.2"
+    version: "0.1.55.61.va_e9ee26616e7"
   - name: managed-scripts
     version: "1.5.4"
   - name: mailer
-    version: "408.vd726a_1130320"
+    version: "435.v79ef3972b_5c7"
   - name: managed-scripts
     version: "1.5.4"
   - name: mattermost
     version: "3.1.1"
   - name: matrix-project
-    version: "1.20"
+    version: "772.v494f19991984"
   - name: maven-plugin
-    version: "3.16"
+    version: "3.19"
+  - name: mina-sshd-api-common
+    version: "2.8.0-36.v8e25ce90d4b_1"
+  - name: mina-sshd-api-core
+    version: "2.8.0-36.v8e25ce90d4b_1"
   - name: momentjs
     version: "1.1.1"
   - name: mqtt-notification-plugin
@@ -152,87 +164,91 @@ jenkins_pipeline_library_plugins_present:
   - name: nodejs
     version: "1.5.1"
   - name: Office-365-Connector
-    version: "4.15.2"
+    version: "4.17.0"
   - name: pipeline-aggregator-view
     version: "1.11"
   - name: pipeline-build-step
-    version: "2.16"
+    version: "2.18"
   - name: pipeline-graph-analysis
-    version: "188.v3a01e7973f2c"
+    version: "195.v5812d95a_a_2f9"
+  - name: pipeline-groovy-lib
+    version: "612.v84da_9c54906d"
   - name: pipeline-input-step
-    version: "446.vf27b_0b_83500e"
+    version: "449.v77f0e8b_845c4"
   - name: pipeline-milestone-step
-    version: "100.v60a_03cd446e1"
+    version: "101.vd572fef9d926"
   - name: pipeline-model-definition
-    version: "1.9.3"
+    version: "2.2114.v2654ca_721309"
   - name: pipeline-model-api
-    version: "1.9.3"
+    version: "2.2114.v2654ca_721309"
   - name: pipeline-model-extensions
-    version: "1.9.3"
+    version: "2.2114.v2654ca_721309"
   - name: pipeline-rest-api
-    version: "2.22"
-  - name: pipeline-stage-step
-    version: "291.vf0a8a7aeeb50"
-  - name: pipeline-stage-tags-metadata
-    version: "1.9.3"
-  - name: pipeline-stage-view
-    version: "2.22"
-  - name: pipeline-utility-steps
-    version: "2.12.0"
-  - name: plain-credentials
-    version: "1.8"
-  - name: plugin-util-api
-    version: "2.14.0"
-  - name: popper-api
-    version: "1.16.1-2"
-  - name: popper2-api
-    version: 2.11.2-1
-  - name: prism-api
-    version: "1.26.0-2"
-  - name: rebuild
-    version: "1.33"
-  - name: scm-api
-    version: "595.vd5a_df5eb_0e39"
-  - name: script-security
-    version: "1138.v8e727069a_025"
-  - name: ssh-credentials
-    version: "1.19"
-  - name: ssh-steps
-    version: "2.0.0"
-  - name: ssh-slaves
-    version: "1.33.0"
-  - name: sshd
-    version: "3.1.0"
-  - name: snakeyaml-api
-    version: "1.29.1"
-  - name: structs
-    version: "308.v852b473a2b8c"
-  - name: token-macro
-    version: "280.v97a_82642793c"
-  - name: trilead-api
-    version: "1.0.13"
-  - name: warnings-ng
-    version: "9.11.1"
-  - name: workflow-api
-    version: "1138.v619fd5201b_2f"
-  - name: workflow-basic-steps
     version: "2.24"
+  - name: pipeline-stage-step
+    version: "293.v200037eefcd5"
+  - name: pipeline-stage-tags-metadata
+    version: "2.2114.v2654ca_721309"
+  - name: pipeline-stage-view
+    version: "2.24"
+  - name: pipeline-utility-steps
+    version: "2.13.0"
+  - name: plain-credentials
+    version: "139.ved2b_9cf7587b"
+  - name: plugin-util-api
+    version: "2.17.0"
+  - name: popper-api
+    version: "1.16.1-3"
+  - name: popper2-api
+    version: "2.11.5-2"
+  - name: prism-api
+    version: "1.28.0-2"
+  - name: rebuild
+    version: "1.34"
+  - name: scm-api
+    version: "620.v0a_5b_1f8054c0"
+  - name: script-security
+    version: "1175.v4b_d517d6db_f0"
+  - name: ssh-credentials
+    version: "295.vced876c18eb_4"
+  - name: ssh-steps
+    version: "2.0.39.v831c5e6468b_c"
+  - name: ssh-slaves
+    version: "1.834.v622da_57f702c"
+  - name: sshd
+    version: "3.242.va_db_9da_b_26a_c3"
+  - name: snakeyaml-api
+    version: "1.30.2-76.vc104f7ce9870"
+  - name: structs
+    version: "324.va_f5d6774f3a_d"
+  - name: token-macro
+    version: "308.v4f2b_ed62b_b_16"
+  - name: trilead-api
+    version: "1.71.v9e7860a_67a_df"
+  - name: variant
+    version: "59.vf075fe829ccb"
+  - name: warnings-ng
+    version: "9.15.0"
+  - name: workflow-api
+    version: "1188.v0016b_4f29881"
+  - name: workflow-basic-steps
+    version: "986.v6b_9c830a_6b_37"
   - name: workflow-cps
-    version: "2659.v52d3de6044d0"
+    version: "2759.v87459c4eea_ca_"
   - name: workflow-cps-global-lib
-    version: "564.ve62a_4eb_b_e039"
+    version: "588.v576c103a_ff86"
   - name: workflow-durable-task-step
-    version: "1121.va_65b_d2701486"
+    version: "1199.v02b_9244f8064"
   - name: workflow-job
-    version: "1145.v7f2433caa07f"
+    version: "1207.ve6191ff089f8"
   - name: workflow-multibranch
-    version: "711.vdfef37cda_816"
+    version: "716.vc692a_e52371b_"
   - name: workflow-scm-step
-    version: "2.13"
+    version: "400.v6b_89a_1317c9a_"
   - name: workflow-step-api
-    version: "622.vb_8e7c15b_c95a_"
+    version: "639.v6eca_cd8c04a_a_"
   - name: workflow-support
-    version: "813.vb_d7c3d2984a_0"
+    version: "838.va_3a_087b_4055b"
 
 # Plugins that must be absent for jenkins-pipeline-library
 jenkins_pipeline_library_plugins_absent:
