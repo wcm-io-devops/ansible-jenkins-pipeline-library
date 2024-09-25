@@ -1,5 +1,9 @@
 [![CI](https://github.com/wcm-io-devops/ansible-jenkins-pipeline-library/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/wcm-io-devops/ansible-jenkins-pipeline-library/actions?query=workflow%3ACI)
 
+> :information_source: **Unmaintained**
+>
+> This project is currently not maintained.
+
 # wcm_io_devops.jenkins_pipeline_library
 
 This role is a utility roles to setup jenkins instances for the usage of
